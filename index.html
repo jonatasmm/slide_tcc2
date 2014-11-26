@@ -7,38 +7,90 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="shower/themes/bright/styles/screen.css">
 	
+	<style>
+		#mod p { 
+		font-size: 26px;
+		margin-top:-30px;
+		}
+		
+		#mod img {
+			float: right;
+			margin-right:-20px;
+			margin-top: -40px;
+		}
+	</style>
+	
 </head>
 <body class="list">
 	<header class="caption">
 		<h1>Um estudo do relacionamento entre técnicas de usabilidade e testes automatizados em métodos empíricos de desenvolvimento de software</h1>
-		<p>Jônatas Medeiros e Rodrigo Medeiros</p>
+		<p> Jônatas Medeiros e Rodrigo Medeiros</p>
+		
 	</header>
 	<section class="slide cover" id="Cover"><div>
 		<h4>Um estudo do relacionamento entre técnicas de usabilidade e testes automatizados em métodos empíricos de desenvolvimento de software</h4>
-		<p>Jônatas Medeiros de Mendonça</p>
-		<p>Rodrigo Medeiros</p>
-		<img src="pictures/colocar.jpg" alt="">
+		<p><b>Autores:</b> Jônatas Medeiros de Mendonça </p>
+		<p>Rodrigo Medeiros Soares da Silva</p>
+		<p><b>Orientador:</b> Prof. Dr. Paulo Roberto Miranda Meirelles</p>
+		<p><b>Curso: </b>Engenharia de Software</p>
+		<p>Universidade de Brasília - Campus UnB Gama</p>
+
+		
 		<!--
 			To apply styles to the certain slides
 			set slide ID to get needed elements
 			-->
 		<style>
+			#Cover {
+				background: #fff;
+			}
 			#Cover h4 {
-				margin:30px 0 0;
-				color:#FFF;
+				margin-bottom: 100px;
+				color:#000;
 				text-align:center;
 				font-size:30px;
 				}
 			#Cover p {
-				margin:30px 0 0;
-				text-align:center;
-				color:#FFF;
+				margin:0px 0 0;
+				text-align:right;
+				color:#000;
 				font-style:italic;
 				font-size:20px;
 				}
 				#Cover p a {
 					color:#FFF;
 					}
+		</style>
+	</div></section>
+
+	<section class="slide" id="agenda"><div>
+		<h2>Agenda</h2>
+		<ul>
+			<li>Introdução</li>
+				<ul>
+					<li>Problemática</li>
+					<li>Objetivos</li> 
+					<li>Questões</li>
+				</ul>
+			<li>Proposta de Trabalho</li>
+			<li>Desenvolvimento Empírico</li>
+			<li>Testes de Software</li>
+			<li>Usabilidade</li>
+			<li>Estudo de Caso</li>
+				<ul>
+					<li>Testes Automatizados</li>
+					<li>Usabilidade</li>
+				</ul>
+			<li>Próximos Passos</li>
+		</ul>
+		
+		<style>
+			#agenda li {
+				font-size: 16px;
+			}
+			
+			#agenda h2 {
+				margin-bottom: 15px;}
 		</style>
 	</div></section>
 	
@@ -114,10 +166,11 @@
 		<blockquote><p>Conjunto de propriedades de uma interface que reúne: fácil aprendizado, eficiência, capacidade de memorização, baixo índice de erros e prazer ao uso (NIELSEN, 1994)
 </p></blockquote>
 
+	<p>Práticas Utilizadas</p>
 	<ul>
-		<li>Cadastro de Usuário;</li>
-		<li>Cadastro de Instituição;</li>
-		<li>Cadastro de Software;</li>
+		<li>Checklists</li>
+		<li>Avaliação Heurísticas</li>
+		<li>Prototipação</li>
 	</ul>
 	</div></section>
 	
@@ -163,22 +216,36 @@
 				<li class="next">falhas obtidas: 0 falhas;</li>
 			</ul>
 		</ul>
-		
-		
-		
-		<style>
-		#mod p { 
-		font-size: 26px;
-		margin-top:-30px;
-		}
-		
-		#mod img {
-			float: right;
-			margin-right:-20px;
-			margin-top: -40px;
-		}
-	</style>
 	</div></section>
+	
+	<section class="slide" id="mod"><div>
+		<h2>Evidências</h2> 
+		<p><code>&lt;Cadastro de Instituição&gt;</code><p>
+		<ul> 
+			<li class="next">Testes de Aceitação</li>
+			<img src="pictures/cadastro_instituicao.png" alt="">
+			<ul>
+				<li class="next">cenários executados: 2 cenários;</li>
+				<li class="next">passos executadas: 23 passos</li>
+				<li class="next">falhas obtidas: 0 falhas;</li>
+			</ul>
+		</ul>
+	</div></section>
+	
+	<section class="slide" id="mod"><div>
+		<h2>Evidências</h2> 
+		<p><code>&lt;Cadastro de Software&gt;</code><p>
+		<ul> 
+			<li class="next">Testes de Aceitação</li>
+			<img src="pictures/cadastro_software.png" alt="">
+			<ul>
+				<li class="next">cenários executados: 6 cenários;</li>
+				<li class="next">passos executadas: 68 passos</li>
+				<li class="next">falhas obtidas: 0 falhas;</li>
+			</ul>
+		</ul>
+	</div></section>
+	
 	
 	<section class="slide"><div>
 		<h2>Ciclo de Atividades</h2>
@@ -218,6 +285,8 @@
 		</style>
 	</div></section>
 	
+	
+	<!-- Modelos de slides
 	<section class="slide"><div>
 		<h2>All Kind of Lists</h2>
 		<ol>
@@ -310,8 +379,8 @@
 			<li class="next">Nobody wants to see the same joke twice</li>
 		</ol>
 	</div></section>
-	
-	<p class="badge"><a href="https://github.com/jonatasmm/slide_tcc">Fork me on Github</a></p>
+	-->
+	<p class="badge"><a href="https://github.com/jonatasmm/slide_tcc2">Fork me on Github</a></p>
 	<!--
 		To hide progress bar from entire presentation
 		just remove “progress” element.
